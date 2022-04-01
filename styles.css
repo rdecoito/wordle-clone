@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--theme-spacing-gap: 8px;
+	--theme-color-border: #777;
+	--theme-color-background: #333;
+	--theme-color-black: #111;
+	--theme-color-yellow: #ffd700;
+	--theme-color-green: #388004;
+}
+
+body {
+	background-color: var(--theme-color-background);
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.wordle-grid {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: var(--theme-spacing-gap);
+}
+
+.word-row {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: var(--theme-spacing-gap);
+}
+
+.letter-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: x-large;
+}
+
+.block-e {
+	border: 1px solid var(--theme-color-border);
+}
+
+.block-b {
+	background-color: var(--theme-color-black);
+}
+
+.block-y {
+	background-color: var(--theme-color-yellow);
+}
+
+.block-g {
+	background-color: var(--theme-color-green);
+}

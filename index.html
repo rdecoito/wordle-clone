@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script src="./build/index.js" type="module"></script>
+	<title>Wordle Clone</title>
+</head>
+
+<body>
+	<div style="display: flex; flex-flow: column nowrap; gap: var(--theme-spacing-gap);">
+		<div id="wordle-grid" class="wordle-grid"></div>
+		<div style="display: flex; flex-flow: row nowrap; gap: var(--theme-spacing-gap); justify-content: center;">
+			<button id=clearBoardBtn>Clear</button>
+			<button id=newGameBtn>New Game</button>
+		</div>
+	</div>
+</body>
+
+</html>

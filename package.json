@@ -1,0 +1,15 @@
+{
+  "name": "pong-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc ./scripts/*.ts --target es2022 --strict --module es2022 --outDir build/",
+    "serve": "npx http-server ./ -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
