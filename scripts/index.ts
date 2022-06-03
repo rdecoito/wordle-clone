@@ -15,7 +15,7 @@ const clearGame = () => {
 const getNewWord = () => {
 	console.log('setting new word')
 	const xhr = new XMLHttpRequest();
-	xhr.open('GET', 'https://random-word-api.herokuapp.com/word?number=1&swear=0');
+	xhr.open('GET', 'https://random-word-api.herokuapp.com/word?number=1&length=5');
 	xhr.send();
 	xhr.onload = () => {
 		if (xhr.status === 200) {

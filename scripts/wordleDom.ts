@@ -45,9 +45,10 @@ const setWordColors = (wordIndex: number, colors: Array<Color>) => {
 const setWordLetters = (wordIndex: number, word: string) => {
 	for (let letterIndex = 0; letterIndex < 5; letterIndex++) {
 		const letter = letterIndex < word.length ? word[letterIndex] : '';
-		const letterDiv = document.querySelector('#' + getLetterId(wordIndex, letterIndex));
+		const letterDiv: HTMLDivElement = document.querySelector('#' + getLetterId(wordIndex, letterIndex));
 		if (letterDiv) {
 			letterDiv.innerHTML = letter.toUpperCase();
+			letterDiv.style.setProperty('animation-delay', `${}s`)
 		}
 	}
 }

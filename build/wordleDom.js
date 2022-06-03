@@ -42,6 +42,7 @@ const setWordLetters = (wordIndex, word) => {
         const letterDiv = document.querySelector('#' + getLetterId(wordIndex, letterIndex));
         if (letterDiv) {
             letterDiv.innerHTML = letter.toUpperCase();
+            letterDiv.style.setProperty('animation-delay', `${}s`);
         }
     }
 };
